@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troca fone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Seus estilos personalizados -->
+  <style>
+    /* Adicione seus estilos personalizados aqui */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #dbdbdb;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+    .search-bar {
+      margin-top: 15px;
+    }
+    .search-input {
+      border-radius: 20px;
+      border: 1px solid #dbdbdb;
+    }
+    .search-btn {
+      border-radius: 20px;
+    }
+    .post {
+      margin-top: 30px;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .post img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .post-description {
+      margin-top: 10px;
+    }
+    .story {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .story img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .suggestions {
+      margin-top: 30px;
+    }
+    .suggestions h4 {
+      font-weight: bold;
+    }
+    .suggestions .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .suggestions .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .comments {
+      margin-top: 20px;
+    }
+    .comments .comment {
+      margin-bottom: 10px;
+    }
+    .comments .comment p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.jpg" alt="Troca fone"></a>
+      <form class="form-inline ml-auto search-bar">
+        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0 search-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Stories -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="story">
+          <img src="sung.jpg" alt="User">
+          <p>Sung Jin-Woo</p>
+        </div>
+        <div class="story">
+          <img src="cha.jpg" alt="User">
+          <p>Cha Hae-in</p>
+        </div>
+        <!-- Adicione mais stories aqui -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Posts -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="post">
+          <img src="fone1.jpg" alt="Post Image">
+          <div class="post-description">
+            <p>Troco esse fone por algum da Redragon
+          <div class="comments">
+            <div class="comment">
+              <p><strong>Rika:</strong> Chama no pv!</p>
+            </div>
+            <div class="comment">
+              <p><strong>Gojo:</strong> Opa, quanto tempo de uso?</p>
+            </div>
+            <!-- Adicione mais comentários aqui -->
+          </div>
+          <button class="btn btn-primary like-btn">Curtir</button>
+        </div>
+        <div class="post">
+          <img src="fone2.jpg" alt="Post Image">
+          <div class="post-description">
+            <p>Troco por qualquer fone, só funciona de um lado.
+          <div class="comments">
+            <div class="comment">
+              <p><strong>Killua:</strong> qual lado funciona?</p>
+            </div>
+            <!-- Adicione mais comentários aqui se desejar -->
+          </div>
+          
+        </div>
+        <!-- Adicione mais postagens aqui -->
+        
+          <button class="btn btn-primary like-btn">Curtir</button>
+        </div>
+        <div class="post">
+          <img src="fone 3.jpg" alt="Post Image">
+          <div class="post-description">
+            <p>Fone completo, novo com menos de 1 mes de uso. troco por um mouse gamer.
+          <div class="comments">
+            <div class="comment">
+              <p><strong>Igris:</strong> qual mouse?</p>
+            </div>
+            <!-- Adicione mais comentários aqui se desejar -->
+          </div>
+          <button class="btn btn-primary like-btn">Curtir</button>
+        </div>
+        <!-- Adicione mais postagens aqui -->
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Suggestions -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 suggestions">
+        <h4>Sugestão para seguir</h4>
+        <div class="profile">
+          <img src="killua.jpg" alt="User">
+          <p>Killua</p>
+        </div>
+        <div class="profile">
+          <img src="luffy.jpg" alt="User">
+          <p>luffy</p>
+        </div>
+        <!-- Adicione mais perfis sugeridos aqui -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

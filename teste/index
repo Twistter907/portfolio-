@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Style</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Seus estilos personalizados -->
+  <style>
+    /* Adicione seus estilos personalizados aqui */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #dbdbdb;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+    .search-bar {
+      margin-top: 15px;
+    }
+    .search-input {
+      border-radius: 20px;
+      border: 1px solid #dbdbdb;
+    }
+    .search-btn {
+      border-radius: 20px;
+    }
+    .post {
+      margin-top: 30px;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .post img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .post-description {
+      margin-top: 10px;
+    }
+    .story {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .story img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .suggestions {
+      margin-top: 30px;
+    }
+    .suggestions h4 {
+      font-weight: bold;
+    }
+    .suggestions .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .suggestions .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .comments {
+      margin-top: 20px;
+    }
+    .comments .comment {
+      margin-bottom: 10px;
+    }
+    .comments .comment p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="instagram-logo.png" alt="Instagram"></a>
+      <form class="form-inline ml-auto search-bar">
+        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0 search-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Stories -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="story">
+          <img src="user1.jpg" alt="User">
+          <p>User1</p>
+        </div>
+        <div class="story">
+          <img src="user2.jpg" alt="User">
+          <p>User2</p>
+        </div>
+        <!-- Adicione mais stories aqui -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Posts -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="post">
+          <img src="post-image1.jpg" alt="Post Image">
+          <div class="post-description">
+            <p>This is a sample post description 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="comments">
+            <div class="comment">
+              <p><strong>User1:</strong> Nice pic!</p>
+            </div>
+            <div class="comment">
+              <p><strong>User2:</strong> Amazing!</p>
+            </div>
+            <!-- Adicione mais comentários aqui -->
+          </div>
+        </div>
+        <div class="post">
+          <img src="post-image2.jpg" alt="Post Image">
+          <div class="post-description">
+            <p>This is a sample post description 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="comments">
+            <div class="comment">
+              <p><strong>User3:</strong> Love it!</p>
+            </div>
+            <!-- Adicione mais comentários aqui se desejar -->
+          </div>
+        </div>
+        <!-- Adicione mais postagens aqui -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Suggestions -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 suggestions">
+        <h4>Suggestions for you</h4>
+        <div class="profile">
+          <img src="user3.jpg" alt="User">
+          <p>User3</p>
+        </div>
+        <div class="profile">
+          <img src="user4.jpg" alt="User">
+          <p>User4</p>
+        </div>
+        <!-- Adicione mais perfis sugeridos aqui -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JavaScript (opcional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+ 
